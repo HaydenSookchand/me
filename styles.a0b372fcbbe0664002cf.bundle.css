@@ -3,4 +3,4 @@ body,html{margin:0;height:100%;width:100%}body{background-color:#448aff;backgrou
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
-*/
+*/#chromeFix{display:block;position:absolute;width:1px;height:100%;top:0;left:0}
