@@ -2,7 +2,7 @@
     {
         "name": "Vimeo",
         "link":"https://vimeo.com/user54615125",
-        "image" :"https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets/vimeo.png"
+        "image" :"https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets//vimeo.png"
     },
     {
         "name": "Photos",
@@ -32,7 +32,7 @@
     {
         "name": "Twitter",
         "link":"https://twitter.com/haydensookchand",
-        "image" :"https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets/twitter.png"
+        "image" :"https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets//twitter.png"
     },
     {
         "name": "linkedIn",
@@ -42,7 +42,7 @@
     {
         "name": "Facebook",
         "link":"https://www.facebook.com/public/Hayden-Sookchand",
-        "image" :"https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets/facebook.png"
+        "image" :"https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets//facebook.png"
     }
 
 ]
