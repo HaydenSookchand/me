@@ -2,31 +2,31 @@
     {
         "name": "Vimeo",
         "link": "https://vimeo.com/user54615125",
-        "image": "assets//vimeo.png"
+        "image": "https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets//vimeo.png"
     },
     {
         "name": "Ariza",
         "link": "http://ariza.co.za/",
-        "image": "assets/ariza.png"
+        "image": "https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets/ariza.png"
     },
     {
         "name": "Github",
         "link": "https://github.com/HaydenSookchand?tab=activity",
-        "image": "assets/github.png"
+        "image": "https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets/github.png"
     },
     {
         "name": "Twitter",
         "link": "https://twitter.com/haydensookchand",
-        "image": "assets//twitter.png"
+        "image": "https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets//twitter.png"
     },
     {
         "name": "linkedIn",
         "link": "https://za.linkedin.com/in/hayden-sookchand-57554867",
-        "image": "assets/linkedin.png"
+        "image": "https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets/linkedin.png"
     },
     {
         "name": "Facebook",
         "link": "https://www.facebook.com/public/Hayden-Sookchand",
-        "image": "assets//facebook.png"
+        "image": "https://raw.githubusercontent.com/HaydenSookchand/mysite/master/assets//facebook.png"
     }
 ]
