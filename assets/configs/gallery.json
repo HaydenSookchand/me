@@ -1,14 +1,27 @@
 [
     {
         "name": "Comic Con 2018",
-        "link": "https://vimeo.com/291188352",
+        "link": "https://vimeo.com/291188352?ref=em-share",
         "image": "assets/feed/comiccon.jpg",
         "desc" : "On the 15th September 2018 was the first Comic Con on African soil. It took place at Johannesburgs Kyalami Race course. Check out this clip to relive an amzing experience."
     },
+
+      {
+        "name": "10000 likes for Durban Comics",
+        "link": "https://www.facebook.com/durbancomics/?hc_ref=ARRFmk2o_4Koi2ym5I_W4D-OpbpGgj0Vr3AITIA32Yp1191u6NYb0pfEBlO2aWFsE-E&fref=nf&__xts__[0]=68.ARBaEv8ZtpPtYD0J0O7i3v6yIx-vTAKBgA1sPfhyqBBmINacaI0M0PO8XQt97hdmnzC69WjlJ-JeVi2YGz0RnAvc6Z5Lo-jzUtoxH6LBpafaFIDBcdIn_dfacLeh4nCwcLroOcU5VhFHMLA1fQ-KG6751pYnzLLuBEFuGqSjjmAwp1qsH5Oxxg&__tn__=kC-R",
+        "image": "assets/feed/10000.jpg",
+        "desc" : "9th September 2018. Durban Comics has achieved a major Milestone 2 years after its creation and achieves 10000 likes on facebook"
+    },
       {
         "name": "Highstakes 2018",
-        "link": "https://vimeo.com/287808145",
+        "link": "https://vimeo.com/287808145?ref=em-share",
         "image": "assets/feed/highstakes.jpg",
         "desc" : "This year. Kerosha wanted to do something adventurous for her birthday. After attempting to find the most adventurous thing that the entire group would participate in. We made the decision to go ziplining at Highstakes. Afterwards some of the guys went quad-biking as well."
+    },
+     {
+        "name": "Bali 2018",
+        "link": "https://vimeo.com/281049350?ref=em-share",
+        "image": "assets/feed/bali.jpg",
+        "desc" : "In June 2018, We visited Bali for our  2nd Year Anniversary. It was an amazing trip. Bali has to be one of the most beautiful islands in the world"
     }
 ]

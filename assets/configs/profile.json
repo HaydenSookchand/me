@@ -5,7 +5,7 @@
         "textSize": "large-text",
         "text": "Hi I'm Hayden",
         "textSize2":"small-text",
-        "text2": " I love coding, coffee and comics. I love meeting new people and exploring new places.Most of all, I love Jesus" 
+        "text2": " I love coding, coffee and comics. I love meeting new people and exploring new places. Most of all, I love Jesus" 
     },
     {
         "id": "slide-2",
@@ -18,9 +18,25 @@
     {
         "id": "slide-3",
         "class": "slide",
-        "textSize": "small-text",
-        "text": "I am fascinated by the world of business, innovation and technology. I love experimenting with new technologies and I am a Blockchain enthusiast.",
+        "textSize": "large-text",
+        "text": "I am fascinated by the world of business, innovation and technology.",
         "textSize2":"medium-text",
-        "text2": "Thanks for Stopping by" 
+        "text2": "." 
+    },
+     {
+        "id": "slide-4",
+        "class": "slide",
+        "textSize": "small-text",
+        "text": "Connect with me on Linked in, if its work related",
+        "textSize2":"medium-text",
+        "text2": "Vimeo, if you want to see my videos" 
+    },
+         {
+        "id": "slide-5",
+        "class": "slide",
+        "textSize": "small-text",
+        "text": "Github , If you want to see my code.",
+        "textSize2":"medium-text",
+        "text2": "Otherwise, just browse my news feed. Thanks for stopping by!!!" 
     }
 ]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "slide-10",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Here is where you will find a list of things that I am currently enjoying...",
+        "textSize2":"small-text",
+        "text2": "" 
+    },
+    {
+        "id": "slide-20",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Coconut Coffee from Bali",
+        "textSize2":"medium-text",
+        "text2": "Picked up some from our trip there in July. Still amazing." 
+    },
+    {
+        "id": "slide-30",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Haxe",
+        "textSize2":"medium-text",
+        "text2": "I recently started working on some projects using Haxe, and it seems to be pretty cool so far." 
+    },
+      {
+        "id": "slide-40",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Angular 5",
+        "textSize2":"medium-text",
+        "text2": "Been loving Angular ever since it came out, so no suprise there." 
+    },
+    {
+        "id": "slide-50",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Creativity Inc",
+        "textSize2":"medium-text",
+        "text2": "I have read this book a few weeks ago. I have since listened to the audiobook a couple of times. Defnitely recommended reading" 
+    },
+    {
+        "id": "slide-60",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Iron Fist Season 2 ",
+        "textSize2":"medium-text",
+        "text2": "I mean its good right?" 
+    },
+     {
+        "id": "slide-70",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Crypto Currency ",
+        "textSize2":"medium-text",
+        "text2": "As long as its going up..." 
+    }
+
+]

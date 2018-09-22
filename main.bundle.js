@@ -99,12 +99,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gallery_gallery_component__ = __webpack_require__("../../../../../src/app/gallery/gallery.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__ = __webpack_require__("../../../../../src/app/profile/profile.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hobbies_hobbies_component__ = __webpack_require__("../../../../../src/app/hobbies/hobbies.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -123,7 +125,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__gallery_gallery_component__["a" /* GalleryComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__["a" /* ProfileComponent */]
+                __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__["a" /* ProfileComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__hobbies_hobbies_component__["a" /* HobbiesComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -135,7 +138,8 @@ var AppModule = (function () {
                     { path: 'me/home', component: __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */] },
                     { path: 'gallery', component: __WEBPACK_IMPORTED_MODULE_7__gallery_gallery_component__["a" /* GalleryComponent */] },
                     { path: 'me/gallery', component: __WEBPACK_IMPORTED_MODULE_7__gallery_gallery_component__["a" /* GalleryComponent */] },
-                    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__["a" /* ProfileComponent */] }
+                    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__["a" /* ProfileComponent */] },
+                    { path: 'hobbies', component: __WEBPACK_IMPORTED_MODULE_9__hobbies_hobbies_component__["a" /* HobbiesComponent */] }
                 ], { useHash: true })
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]],
@@ -157,7 +161,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\n\n.list-container{\n\tcolor:white;\n}\n/*a little bit of reset*/\n#services-list, #services-list p, #services-list h3 {\nlist-style: none;\nmargin:20px; padding:0;\n}\n#services-list > li{\n  float:left;\n  margin-right: 20px;\n  width: 100%;\n}\n#services-list > li > .image{\n  display:block;\n  float:left;\n  margin-right:10px;\n}\n/*\nthis instructions are to force the dimensions of image and its container <a>\n*/\n#services-list > li > .image,\n#services-list > li > .image > img{\n  width:150px; height:150px;\n}\n.profile-component-footer{\n    margin:0 auto;\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n    text-align: center;\n}", ""]);
+exports.push([module.i, "\n\n.list-container{\n\tcolor:white;\n}\n/*a little bit of reset*/\n#services-list, #services-list p, #services-list h3 {\nlist-style: none;\nmargin:20px; padding:0;\n}\n#services-list > li{\n  float:left;\n  margin-right: 20px;\n  width: 100%;\n}\n#services-list > li > .image{\n  display:block;\n  float:left;\n  margin-right:10px;\n}\n/*\nthis instructions are to force the dimensions of image and its container <a>\n*/\n#services-list > li > .image,\n#services-list > li > .image > img{\n  width:170px; height:150px;\n}\n.gallery-component-footer{\n    margin:0 auto;\n\n    left: 0;\n    bottom: 0;\n    width: 100%;\n    text-align: center;\n}", ""]);
 
 // exports
 
@@ -170,7 +174,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/gallery/gallery.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"list-container\">\n\n<ul id=\"services-list\">\n<li *ngFor=\"let data of this.data\">\n  <a href=\"{{data.link}}}\" class=\"image\">\n    <img src=\"{{data.image}}\" >\n  </a>\n  <div class=\"content\">\n    <h3> {{ data.name }}</h3>\n    <p style=\"width:80%\"> {{ data.desc}} </p>\n  </div>\n</li>\n</ul>\n\n</div>\n\n\n<div id=\"quote\">\"You only live once, but if you do it right, once is enough\"</div>\n\n<!--Make sure this home button image is cached  -->\n<div class=\"profile-component-footer\">\n    <div>\n        <a routerLink=\"/home\">\n            <img id=\"home\" class=\"icon\" src=\"assets/home.png\" style=\"margin:o auto;\">\n        </a>\n    </div>\n</div>"
+module.exports = "\n<div class=\"list-container\">\n\n<ul id=\"services-list\">\n<li *ngFor=\"let data of this.data\">\n  <a href=\"{{data.link}}}\" class=\"image\">\n    <img src=\"{{data.image}}\" >\n  </a>\n  <div class=\"content\">\n    <h3> {{ data.name }}</h3>\n    <p style=\"width:90%\"> {{ data.desc}} </p>\n  </div>\n</li>\n</ul>\n\n</div>\n\n\n<div id=\"quote\">\"You only live once, but if you do it right, once is enough\"</div>\n\n<!--Make sure this home button image is cached  -->\n<div class=\"gallery-component-footer\">\n    <div>\n        <a routerLink=\"/home\">\n            <img id=\"home\" class=\"icon\" src=\"assets/home.png\" style=\"margin:o auto;\">\n        </a>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -218,6 +222,157 @@ var GalleryComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/hobbies/hobbies.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.hobbies-component-container{\n    width: 300px;\n    height: 300px;\n    overflow-y: hidden;\n    opacity:1;\n}\n\n\n\n.hobbies-component-info{\n    padding-top: 100px;\n}\n\n\n\n.hobbies-component-footer{\n    margin:0 auto;\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n    text-align: center;\n}\n\n\n\n#replay{\n  opacity :0;\n}\n\n\n\n.addPadding{\n  padding-top: 40px;\n}\n\n\n\n#home{\n  opacity :0;\n}\n\n\n\n.small-text{\n  font-size: 18px;\n}\n\n\n\n.small-mid-text{\n  font-size: 25px;\n}\n\n\n\n.medium-text{\n  font-size: 28px;\n}\n\n\n\n.large-text{\n  font-size: 32px;\n}\n\n\n\n.slide {\n  overflow: hidden;\n    position: absolute;\n    display: block;\n    color:white; \n    text-align: center;\n    width: 300px;\n    font-size: 28px;\n    opacity:0;\n    left:-5px;\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/hobbies/hobbies.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Pull all this from Config !-->\n\n<div id=\"hobbies-component-container\" class=\"hobbies-component-container\" (window:resize)=\"handleResize();\">\n    <div class=\"hobbies-component-info\">\n        <div *ngFor=\"let hobbiesData of this.hobbiesData\" id=\"{{hobbiesData.id}}\" class=\"{{hobbiesData.class}}\">\n            <div class=\"{{hobbiesData.textSize}}\"> {{hobbiesData.text}}</div>\n            <div class=\"{{hobbiesData.textSize2}} addPadding\">{{hobbiesData.text2}} </div>\n        </div>\n    </div>\n</div>\n\n<!--Make sure this home button image is cached  -->\n<div class=\"hobbies-component-footer\">\n    <div>\n        <a routerLink=\"/home\">\n            <img id=\"home\" class=\"icon\" src=\"assets/home.png\" style=\"margin:o auto;\">\n        </a>\n    </div>\n\n    <div>\n        <img style=\"width:20px;height:20px;\" id=\"replay\" src=\"assets/play.png\" (click)=\"handleReplay();\">\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/hobbies/hobbies.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HobbiesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_gsap__ = __webpack_require__("../../../../gsap/TweenMax.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_gsap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_gsap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HobbiesComponent = (function () {
+    function HobbiesComponent(http) {
+        this.http = http;
+    }
+    HobbiesComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // get data - maybe use a service?
+        this.http.get('./assets/configs/hobbies.json').subscribe(function (data) {
+            _this.hobbiesData = data;
+        });
+        //Timeout is allowing for angular to create the divs from data in the json file
+        var that = this;
+        setTimeout(function () {
+            _this.init();
+        }, 150);
+    };
+    HobbiesComponent.prototype.init = function () {
+        this.bindToElements();
+        this.setUpAnimations();
+        this.playAnimations();
+    };
+    /** ***************************** Bind and Setup ***************************************************/
+    HobbiesComponent.prototype.bindToElements = function () {
+        this.createSlideBindings();
+        this.homeButton = document.getElementById("home");
+        this.replayButton = document.getElementById("replay");
+        this.hobbiesContainer = document.getElementById("hobbies-component-container");
+    };
+    HobbiesComponent.prototype.createSlideBindings = function () {
+        // This reads tha amount of items in the json file to determine how many items to map 2 instead of manually having to enter code 
+        //this.items1 = document.getElementById("slide-1");
+        //this.items2 = document.getElementById("slide-2");
+        this.hobbyItems = [];
+        for (var b = 0; b < this.hobbiesData.length; b++) {
+            console.log(this.hobbiesData[b].id);
+            this.hobbyItems[b] = document.getElementById(this.hobbiesData[b].id);
+        }
+    };
+    HobbiesComponent.prototype.setUpAnimations = function () {
+        this.textAnimation = new __WEBPACK_IMPORTED_MODULE_1_gsap__["TimelineMax"]({ repeat: 0 });
+    };
+    /** ***************************** Play Animations ***************************************************/
+    HobbiesComponent.prototype.playAnimations = function () {
+        this.x = this.getMiddleX();
+        this.textAnimation.to(this.homeButton, 0.5, { scale: 1, opacity: 1, y: 0 });
+        this.playSlideAnimations();
+        this.playButtonAnimations();
+    };
+    HobbiesComponent.prototype.playSlideAnimations = function () {
+        console.log(this.hobbyItems.length);
+        for (var a = 0; a < this.hobbyItems.length; a++) {
+            this.textAnimation.fromTo(this.hobbyItems[a], 1, { opacity: 0, x: 0, xPercent: -50 }, { opacity: 1, x: this.x, xPercent: -50 });
+            this.textAnimation.to(this.hobbyItems[a], 1, { opacity: 0, x: window.innerWidth - 150 }, "+=3");
+        }
+    };
+    HobbiesComponent.prototype.playButtonAnimations = function () {
+        this.textAnimation.to(this.homeButton, 1, { scale: 3, opacity: 1, y: -(window.innerHeight / 2) });
+        this.textAnimation.to(this.replayButton, 0.4, { scale: 3, opacity: 1, y: -((window.innerHeight / 2) - 100) });
+    };
+    /** ***************************** Reset Animations ***************************************************/
+    HobbiesComponent.prototype.resetButtonAnimations = function () {
+        this.textAnimation.to(this.homeButton, 0.1, { scale: 1, y: 0 });
+        this.textAnimation.to(this.replayButton, 0.1, { scale: 1, opacity: 0, y: 0 });
+    };
+    HobbiesComponent.prototype.resetSlideAnimations = function () {
+        for (var a = 0; a < this.hobbyItems.length; a++) {
+            this.textAnimation.to(this.hobbyItems[a], 0.1, { opacity: 0, x: 0, xPercent: -50 });
+        }
+    };
+    HobbiesComponent.prototype.resetAnimations = function () {
+        this.resetButtonAnimations(this);
+        this.resetSlideAnimations(this);
+    };
+    /** ***************************** Reset Animations ***************************************************/
+    // Handle Click on replay
+    HobbiesComponent.prototype.handleReplay = function () {
+        this.resetButtonAnimations(this);
+        this.playAnimations(this);
+    };
+    // Handle Window Resize
+    HobbiesComponent.prototype.handleResize = function () {
+        this.textAnimation.totalProgress(1).kill();
+        this.resetAnimations();
+        this.playAnimations(this);
+    };
+    // Get the correct X value - like to move this out into a co-ordinate class
+    HobbiesComponent.prototype.getMiddleX = function () {
+        return window.innerWidth / 2;
+    };
+    HobbiesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app',
+            template: __webpack_require__("../../../../../src/app/hobbies/hobbies.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/hobbies/hobbies.component.css")],
+            providers: []
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
+    ], HobbiesComponent);
+    return HobbiesComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/home/home.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -239,7 +394,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"grid-container\">\n    <a routerLink=\"/gallery\">\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"assets/feed.png\">\n        </div>\n    </a>\n\n    <a routerLink=\"/gallery\">\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"assets/hearts.png\">\n        </div>\n    </a>\n\n    <a routerLink=\"/profile\">\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"assets/info.png\">\n        </div>\n    </a>\n   \n</div>\n\n<div class=\"grid-container\">\n    <a *ngFor=\"let data of this.data\" href={{data.link}}>\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"{{data.image}}\">\n        </div>\n    </a>\n</div>\n<div id=\"quote\">\"You only live once, but if you do it right, once is enough\"</div>"
+module.exports = "<div class=\"grid-container\">\n    <a routerLink=\"/gallery\">\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"assets/feed.png\">\n        </div>\n    </a>\n\n    <a routerLink=\"/hobbies\">\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"assets/hearts.png\">\n        </div>\n    </a>\n\n    <a routerLink=\"/profile\">\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"assets/info.png\">\n        </div>\n    </a>\n   \n</div>\n\n<div class=\"grid-container\">\n    <a *ngFor=\"let data of this.data\" href={{data.link}}>\n        <div class=\"grid-item\">\n            <img class=\"icon\" src=\"{{data.image}}\">\n        </div>\n    </a>\n</div>\n<div id=\"quote\">\"You only live once, but if you do it right, once is enough\"</div>"
 
 /***/ }),
 
@@ -348,7 +503,7 @@ var ProfileComponent = (function () {
         var that = this;
         setTimeout(function () {
             _this.init();
-        }, 100);
+        }, 150);
     };
     ProfileComponent.prototype.init = function () {
         this.bindToElements();
@@ -386,7 +541,7 @@ var ProfileComponent = (function () {
         console.log(this.items.length);
         for (var a = 0; a < this.items.length; a++) {
             this.textAnimation.fromTo(this.items[a], 1, { opacity: 0, x: 0, xPercent: -50 }, { opacity: 1, x: this.x, xPercent: -50 });
-            this.textAnimation.to(this.items[a], 1, { opacity: 0, x: window.innerWidth - 150 }, "+=3");
+            this.textAnimation.to(this.items[a], 1, { opacity: 0, x: window.innerWidth - 150 }, "+=5");
         }
     };
     ProfileComponent.prototype.playButtonAnimations = function () {
