@@ -1,0 +1,26 @@
+[
+    {
+        "id": "slide-1",
+        "class": "slide",
+        "textSize": "large-text",
+        "text": "Hi I'm Hayden",
+        "textSize2":"small-text",
+        "text2": " I love coding, coffee and comics. I love meeting new people and exploring new places.Most of all, I love Jesus" 
+    },
+    {
+        "id": "slide-2",
+        "class": "slide",
+        "textSize": "small-text",
+        "text": "In 2014, I graduated from the Durban University of Technology with a degree in Electronic Engineering I currenly work as a",
+        "textSize2":"medium-text",
+        "text2": " Game Developer" 
+    },
+    {
+        "id": "slide-3",
+        "class": "slide",
+        "textSize": "small-text",
+        "text": "I am fascinated by the world of business, innovation and technology. I love experimenting with new technologies and I am a Blockchain enthusiast.",
+        "textSize2":"medium-text",
+        "text2": "Thanks for Stopping by" 
+    }
+]
