@@ -505,10 +505,30 @@ var ProfileComponent = (function () {
             _this.init();
         }, 150);
     };
+    ProfileComponent.prototype.loadData = function () {
+        var _this = this;
+        console.log('No Data. Trying again...'); //add in a timeout 
+        if (!this.profileData) {
+            this.http.get('./assets/configs/profile.json').subscribe(function (data) {
+                _this.profileData = data;
+            });
+            setTimeout(function () {
+                _this.init();
+            }, 350);
+        }
+        else
+            this.init();
+    };
     ProfileComponent.prototype.init = function () {
-        this.bindToElements();
-        this.setUpAnimations();
-        this.playAnimations();
+        // if data is not loaded then we cannot construct our view so go back and load data
+        if (!this.profileData) {
+            this.loadData();
+        }
+        else {
+            this.bindToElements();
+            this.setUpAnimations();
+            this.playAnimations();
+        }
     };
     /** ***************************** Bind and Setup ***************************************************/
     ProfileComponent.prototype.bindToElements = function () {
@@ -528,34 +548,70 @@ var ProfileComponent = (function () {
         }
     };
     ProfileComponent.prototype.setUpAnimations = function () {
-        this.textAnimation = new __WEBPACK_IMPORTED_MODULE_1_gsap__["TimelineMax"]({ repeat: 0 });
+        this.textAnimation = new __WEBPACK_IMPORTED_MODULE_1_gsap__["TimelineMax"]({
+            repeat: 0
+        });
     };
     /** ***************************** Play Animations ***************************************************/
     ProfileComponent.prototype.playAnimations = function () {
         this.x = this.getMiddleX();
-        this.textAnimation.to(this.homeButton, 0.5, { scale: 1, opacity: 1, y: 0 });
+        this.textAnimation.to(this.homeButton, 0.5, {
+            scale: 1,
+            opacity: 1,
+            y: 0
+        });
         this.playSlideAnimations();
         this.playButtonAnimations();
     };
     ProfileComponent.prototype.playSlideAnimations = function () {
         console.log(this.items.length);
         for (var a = 0; a < this.items.length; a++) {
-            this.textAnimation.fromTo(this.items[a], 1, { opacity: 0, x: 0, xPercent: -50 }, { opacity: 1, x: this.x, xPercent: -50 });
-            this.textAnimation.to(this.items[a], 1, { opacity: 0, x: window.innerWidth - 150 }, "+=5");
+            this.textAnimation.fromTo(this.items[a], 1, {
+                opacity: 0,
+                x: 0,
+                xPercent: -50
+            }, {
+                opacity: 1,
+                x: this.x,
+                xPercent: -50
+            });
+            this.textAnimation.to(this.items[a], 1, {
+                opacity: 0,
+                x: window.innerWidth - 150
+            }, "+=5");
         }
     };
     ProfileComponent.prototype.playButtonAnimations = function () {
-        this.textAnimation.to(this.homeButton, 1, { scale: 3, opacity: 1, y: -(window.innerHeight / 2) });
-        this.textAnimation.to(this.replayButton, 0.4, { scale: 3, opacity: 1, y: -((window.innerHeight / 2) - 100) });
+        this.textAnimation.to(this.homeButton, 1, {
+            scale: 3,
+            opacity: 1,
+            y: -(window.innerHeight / 2)
+        });
+        this.textAnimation.to(this.replayButton, 0.4, {
+            scale: 3,
+            opacity: 1,
+            y: -((window.innerHeight / 2) - 100)
+        });
     };
     /** ***************************** Reset Animations ***************************************************/
     ProfileComponent.prototype.resetButtonAnimations = function () {
-        this.textAnimation.to(this.homeButton, 0.1, { scale: 1, y: 0 });
-        this.textAnimation.to(this.replayButton, 0.1, { scale: 1, opacity: 0, y: 0 });
+        this.textAnimation.to(this.homeButton, 0.1, {
+            scale: 1,
+            y: 0
+        });
+        this.textAnimation.to(this.replayButton, 0.1, {
+            scale: 1,
+            opacity: 0,
+            y: 0
+        });
     };
     ProfileComponent.prototype.resetSlideAnimations = function () {
         for (var a = 0; a < this.items.length; a++) {
-            this.textAnimation.to(this.items[a], 0.1, { opacity: 0, x: 0, xPercent: -50 });
+            this.textAnimation.to(this.items[a], 0.1, {
+                opacity: 0,
+                x: 0,
+                xPercent: -50
+            });
         }
     };
     ProfileComponent.prototype.resetAnimations = function () {
